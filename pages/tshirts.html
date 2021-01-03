@@ -1,0 +1,389 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <script src="js/local_modal.js"></script>
+      <title>tshirts</title>
+    </head>
+    <body onload="init()">
+      <div class="w3-container">
+        <h2>TSHIRTS</h2>
+        <ul class="w3-ul">
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <div>
+              <h2 id="card-title" class="w3-center"></h2>
+              <img id="imgModal" src="" width="100%" height="100%">
+            </div>
+          </div>
+        
+        </div>
+        <!-- End Modal -->
+
+        <div class="w3-row-padding">
+  
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_01_basic_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_01_basic_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_01_basic_01.jpg', 'TShirt_01_basic_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_01_basic_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_01_basic_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_01_basic_02.jpg', 'TShirt_01_basic_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_01_basic_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_01_basic_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_01_basic_03.jpg', 'TShirt_01_basic_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">Tshirt_01_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/Tshirt_01_old_01.jpg" onclick="handleClick('../fashion/TShirts/Tshirt_01_old_01.jpg', 'Tshirt_01_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_01_old_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_01_old_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_01_old_02.jpg', 'TShirt_01_old_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_01_old_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_01_old_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_01_old_03.jpg', 'TShirt_01_old_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_01_rich_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_01_rich_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_01_rich_01.jpg', 'TShirt_01_rich_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_01_rich_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_01_rich_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_01_rich_02.jpg', 'TShirt_01_rich_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_01_rich_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_01_rich_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_01_rich_03.jpg', 'TShirt_01_rich_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_basic_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_basic_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_basic_01.jpg', 'TShirt_02_basic_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_basic_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_basic_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_basic_02.jpg', 'TShirt_02_basic_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_basic_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_basic_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_basic_03.jpg', 'TShirt_02_basic_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_basic_04</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_basic_04.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_basic_04.jpg', 'TShirt_02_basic_04')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_basic_05</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_basic_05.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_basic_05.jpg', 'TShirt_02_basic_05')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_old_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_old_01.jpg', 'TShirt_02_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_old_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_old_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_old_02.jpg', 'TShirt_02_old_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_old_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_old_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_old_03.jpg', 'TShirt_02_old_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_old_04</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_old_04.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_old_04.jpg', 'TShirt_02_old_04')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_rich_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_rich_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_rich_01.jpg', 'TShirt_02_rich_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_rich_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_rich_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_rich_02.jpg', 'TShirt_02_rich_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_rich_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_rich_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_rich_03.jpg', 'TShirt_02_rich_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_02_rich_04</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_02_rich_04.jpg" onclick="handleClick('../fashion/TShirts/TShirt_02_rich_04.jpg', 'TShirt_02_rich_04')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_03_basic_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_03_basic_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_03_basic_01.jpg', 'TShirt_03_basic_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_03_basic_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_03_basic_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_03_basic_02.jpg', 'TShirt_03_basic_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_03_basic_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_03_basic_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_03_basic_03.jpg', 'TShirt_03_basic_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_03_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_03_old_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_03_old_01.jpg', 'TShirt_03_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_03_old_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_03_old_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_03_old_02.jpg', 'TShirt_03_old_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_03_old_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_03_old_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_03_old_03.jpg', 'TShirt_03_old_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_03_rich_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_03_rich_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_03_rich_01.jpg', 'TShirt_03_rich_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_03_rich_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_03_rich_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_03_rich_02.jpg', 'TShirt_03_rich_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_03_rich_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_03_rich_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_03_rich_03.jpg', 'TShirt_03_rich_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_04_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_04_old_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_04_old_01.jpg', 'TShirt_04_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_04_old_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_04_old_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_04_old_02.jpg', 'TShirt_04_old_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_04_old_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_04_old_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_04_old_03.jpg', 'TShirt_04_old_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_04_old_04</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_04_old_04.jpg" onclick="handleClick('../fashion/TShirts/TShirt_04_old_04.jpg', 'TShirt_04_old_04')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_04_old_05</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_04_old_05.jpg" onclick="handleClick('../fashion/TShirts/TShirt_04_old_05.jpg', 'TShirt_04_old_05')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_04_old_06</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_04_old_06.jpg" onclick="handleClick('../fashion/TShirts/TShirt_04_old_06.jpg', 'TShirt_04_old_06')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_05_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_05_old_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_05_old_01.jpg', 'TShirt_05_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_05_old_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_05_old_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_05_old_02.jpg', 'TShirt_05_old_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_05_old_03</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_05_old_03.jpg" onclick="handleClick('../fashion/TShirts/TShirt_05_old_03.jpg', 'TShirt_05_old_03')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_05_old_04</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_05_old_04.jpg" onclick="handleClick('../fashion/TShirts/TShirt_05_old_04.jpg', 'TShirt_05_old_04')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_05_old_05</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_05_old_05.jpg" onclick="handleClick('../fashion/TShirts/TShirt_05_old_05.jpg', 'TShirt_05_old_05')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_05_old_06</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_05_old_06.jpg" onclick="handleClick('../fashion/TShirts/TShirt_05_old_06.jpg', 'TShirt_05_old_06')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_06_basic_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_06_basic_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_06_basic_01.jpg', 'TShirt_06_basic_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_06_basic_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_06_basic_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_06_basic_02.jpg', 'TShirt_06_basic_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_06_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_06_old_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_06_old_01.jpg', 'TShirt_06_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_06_old_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_06_old_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_06_old_02.jpg', 'TShirt_06_old_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_06_rich_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_06_rich_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_06_rich_01.jpg', 'TShirt_06_rich_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_06_rich_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_06_rich_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_06_rich_02.jpg', 'TShirt_06_rich_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_07_basic_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_07_basic_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_07_basic_01.jpg', 'TShirt_07_basic_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_07_basic_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_07_basic_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_07_basic_02.jpg', 'TShirt_07_basic_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_07_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_07_old_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_07_old_01.jpg', 'TShirt_07_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_07_old_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_07_old_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_07_old_02.jpg', 'TShirt_07_old_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_07_rich_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_07_rich_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_07_rich_01.jpg', 'TShirt_07_rich_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_07_rich_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_07_rich_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_07_rich_02.jpg', 'TShirt_07_rich_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_08_basic_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_08_basic_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_08_basic_01.jpg', 'TShirt_08_basic_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_08_basic_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_08_basic_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_08_basic_02.jpg', 'TShirt_08_basic_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_08_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_08_old_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_08_old_01.jpg', 'TShirt_08_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_08_old_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_08_old_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_08_old_02.jpg', 'TShirt_08_old_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_08_rich_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_08_rich_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_08_rich_01.jpg', 'TShirt_08_rich_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_08_rich_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_08_rich_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_08_rich_02.jpg', 'TShirt_08_rich_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_09_basic_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_09_basic_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_09_basic_01.jpg', 'TShirt_09_basic_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_09_basic_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_09_basic_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_09_basic_02.jpg', 'TShirt_09_basic_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_09_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_09_old_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_09_old_01.jpg', 'TShirt_09_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_09_old_02</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_09_old_02.jpg" onclick="handleClick('../fashion/TShirts/TShirt_09_old_02.jpg', 'TShirt_09_old_02')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_10_basic_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_10_basic_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_10_basic_01.jpg', 'TShirt_10_basic_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_10_old_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_10_old_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_10_old_01.jpg', 'TShirt_10_old_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_10_rich_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_10_rich_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_10_rich_01.jpg', 'TShirt_10_rich_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_11_basic_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_11_basic_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_11_basic_01.jpg', 'TShirt_11_basic_01')">
+            </div>
+    
+            <div class="w3-col s3 w3-card w3-center display-card">
+              <div class="card-header">TShirt_11_rich_01</div>
+              <img class="card-img" src="../thumbs/TShirts/TShirt_11_rich_01.jpg" onclick="handleClick('../fashion/TShirts/TShirt_11_rich_01.jpg', 'TShirt_11_rich_01')">
+            </div>
+    
+        </div>
+      </div>
+    </body>
+  </html>
+  
