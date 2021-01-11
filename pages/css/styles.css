@@ -5,6 +5,14 @@ body {
   color:rgb(248, 248, 248);
 }
 
+.header-col {
+  width: 160px;
+}
+
+.item-col {
+  width: 60px;
+}
+
 .display-card {
   width: 240px !important;
   padding: 8px !important;

@@ -8,18 +8,19 @@ const path = require('path');
 const sharp = require('sharp');
 const fsp = fs.promises;
 
-const FashionDir = './fashion';
+const FemaleFashionDir = './fashion/female';
+const MaleFashionDir = './fashion/male';
 const ImageSize = 128;
 
 const resizeImage = async (dirPath, file) => {
   const filePath = path.join(dirPath, file.name);
-
   const thumbsPath = dirPath.replace('fashion', 'thumbs');
+
   await fsp.mkdir(thumbsPath, { recursive: true}).catch((err) => console.log(err));
 
   const buffer = await sharp(filePath).resize(ImageSize, ImageSize).toBuffer();
-
   const savePath = path.join(thumbsPath, file.name);
+
   await fsp.writeFile(savePath, buffer).catch((err) => console.log(err));
 };
 
@@ -36,15 +37,15 @@ const writeToHtml = async (dirPath, files) => {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="css/styles.css">
-      <script src="js/local_modal.js"></script>
+      <link rel="stylesheet" href="../css/styles.css">
+      <script src="../js/local_modal.js"></script>
       <title>${dirName}</title>
     </head>
     <body onload="init()">
       <div class="w3-container">
         <h2>${dirName.toUpperCase()}</h2>
         <ul class="w3-ul">
-          <li><a href="../index.html">Home</a></li>
+          <li><a href="../../index.html">Home</a></li>
         </ul>
 
         <!-- The Modal -->
@@ -74,7 +75,7 @@ const writeToHtml = async (dirPath, files) => {
     html += `
             <div class="w3-col s3 w3-card w3-center display-card">
               <div class="card-header">${f.name.replace('.jpg', '')}</div>
-              <img class="card-img" src="${smallImgPath.replace('\\', '/')}" onclick="handleClick('${largeImgPath.replace('\\', '/')}', '${f.name.replace('.jpg', '')}')">
+              <img class="card-img" src="../${smallImgPath.replace('\\', '/')}" onclick="handleClick('../${largeImgPath.replace('\\', '/')}', '${f.name.replace('.jpg', '')}')">
             </div>
     `
   });
@@ -102,26 +103,98 @@ const createIndex = async () => {
     <body>
       <div class="w3-container">
         <h2>Home</h2></br>
-        <ul class="w3-ul">
-          <li><a href="pages/boots.html">Boots</a></li>
-          <li><a href="pages/coats.html">Coats</a></li>
-          <li><a href="pages/dresses.html">Dresses</a></li>
-          <li><a href="pages/eyewear.html">Eyewear</a></li>
-          <li><a href="pages/formal_jackets.html">Formal Jackets</a></li>
-          <li><a href="pages/formal_pants.html">Formal Pants</a></li>
-          <li><a href="pages/formal_shoes.html">Formal Shoes</a></li>
-          <li><a href="pages/headgear.html">Head Gear</a></li>
-          <li><a href="pages/jackets.html">Jackets</a></li>
-          <li><a href="pages/jumpsuits.html">Jumpsuits</a></li>
-          <li><a href="pages/masks.html">Masks</a></li>
-          <li><a href="pages/pants.html">Pants</a></li>
-          <li><a href="pages/shirts.html">Shirts</a></li>
-          <li><a href="pages/shoes.html">Shoes</a></li>
-          <li><a href="pages/skirts.html">Skirts</a></li>
-          <li><a href="pages/tops.html">Tops</a></li>
-          <li><a href="pages/tshirts.html">T-Shirts</a></li>
-          <li><a href="pages/vests.html">Vests</a></li>
-        </ul>
+        <table>
+          <tr>
+            <td class="header-col">Boots</td>
+            <td class="item-col"><a href="pages/female/boots.html">female</a></td>
+            <td class="item-col"><a href="pages/male/boots.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Coats</td>
+            <td class="item-col"><a href="pages/female/coats.html">female</a></td>
+            <td class="item-col"><a href="pages/male/coats.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Dresses</td>
+            <td class="item-col"><a href="pages/female/dresses.html">female</a></td>
+            <td class="item-col"><a href="pages/male/dresses.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Eyewear</td>
+            <td class="item-col"><a href="pages/female/eyewear.html">female</a></td>
+            <td class="item-col"><a href="pages/male/eyewear.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Formal Jackets</td>
+            <td class="item-col"><a href="pages/female/formal_jackets.html">female</a></td>
+            <td class="item-col"><a href="pages/male/formal_jackets.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Formal Pants</td>
+            <td class="item-col"><a href="pages/female/formal_pants.html">female</a></td>
+            <td class="item-col"><a href="pages/male/formal_pants.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Formal Shoes</td>
+            <td class="item-col"><a href="pages/female/formal_shoes.html">female</a></td>
+            <td class="item-col"><a href="pages/male/formal_shoes.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Head Gear</td>
+            <td class="item-col"><a href="pages/female/headgear.html">female</a></td>
+            <td class="item-col"><a href="pages/male/headgear.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Jackets</td>
+            <td class="item-col"><a href="pages/female/jackets.html">female</a></td>
+            <td class="item-col"><a href="pages/male/jackets.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Jumpsuits</td>
+            <td class="item-col"><a href="pages/female/jumpsuits.html">female</a></td>
+            <td class="item-col"><a href="pages/male/jumpsuits.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Masks</td>
+            <td class="item-col"><a href="pages/female/masks.html">female</a></td>
+            <td class="item-col"><a href="pages/male/masks.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Pants</td>
+            <td class="item-col"><a href="pages/female/pants.html">female</a></td>
+            <td class="item-col"><a href="pages/male/pants.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Shirts</td>
+            <td class="item-col"><a href="pages/female/shirts.html">female</a></td>
+            <td class="item-col"><a href="pages/male/shirts.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Shoes</td>
+            <td class="item-col"><a href="pages/female/shoes.html">female</a></td>
+            <td class="item-col"><a href="pages/male/shoes.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Skirts</td>
+            <td class="item-col"><a href="pages/female/skirts.html">female</a></td>
+            <td class="item-col"><a href="pages/male/skirts.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Tops</td>
+            <td class="item-col"><a href="pages/female/tops.html">female</a></td>
+            <td class="item-col"><a href="pages/male/tops.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">T-Shirts</td>
+            <td class="item-col"><a href="pages/female/tshirts.html">female</a></td>
+            <td class="item-col"><a href="pages/male/tshirts.html">male</a></td>
+          </tr>
+          <tr>
+            <td class="header-col">Vests</td>
+            <td class="item-col"><a href="pages/female/vests.html">female</a></td>
+            <td class="item-col"><a href="pages/male/vests.html">male</a></td>
+          </tr>
+        </table>
       </div>
     </body>
   </html>
@@ -139,14 +212,15 @@ const recurseReadDirs = async (dirPath) => {
     const files = entries.filter((f) => !f.isDirectory());
 
     folders.map((f) => {
-      const fullPath = path.join(FashionDir, f.name);
+      const fullPath = path.join(dirPath, f.name);
       recurseReadDirs(fullPath);
     });
 
-    //files.map((f) => resizeImage(dirPath, f));
+    files.map((f) => resizeImage(dirPath, f));
     writeToHtml(dirPath, files);
-    createIndex();
   }
 };
 
-recurseReadDirs(FashionDir);
+recurseReadDirs(FemaleFashionDir);
+recurseReadDirs(MaleFashionDir);
+createIndex();
